@@ -20,23 +20,6 @@ app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, './public/note
 // res.json() allows us to return JSON instead of a buffer, string, or static file
 app.get('*', (req, res) => res.sendFile(path.join(__dirname, './public/index.html')));
 
-// GET request for notes
-app.get('/api/notes', (req, res) => {
-    // Inform the client
-    res.json(`${req.method} request received to get notes`);
-  
-    // Log our request to the terminal
-    console.info(`${req.method} request received to get notes`);
-});
-
-app.post('/api/notes', (req, res) => {
-    // Inform the client that their POST request was receieved
-    res.json(`${req.method} request received to post notes`);
-  
-    // Log our request to the terminal
-    console.info(`${req.method} request received to post reviews`);
-} )
-
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
