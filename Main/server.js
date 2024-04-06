@@ -9,6 +9,8 @@ const PORT = 3001;
 
 // Initialize our app variable by setting it to the value of express()
 const app = express();
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true} ));
 app.use('/api', api);

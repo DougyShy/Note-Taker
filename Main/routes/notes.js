@@ -12,7 +12,8 @@ notes.get('/', (req, res) => {
 
 notes.post('/', (req, res) => {
     console.log(req.body);
-  
+
+    // Destructuring assignment for the items in req.body
     const { title, text } = req.body;
 
     console.log(title, text);
