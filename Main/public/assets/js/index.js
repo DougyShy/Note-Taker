@@ -189,6 +189,9 @@ if (window.location.pathname === '/notes') {
   newNoteBtn.addEventListener('click', handleNewNoteView);
   clearBtn.addEventListener('click', renderActiveNote);
   noteForm.addEventListener('input', handleRenderBtns);
+  for (const note of noteList) {
+    note.addEventListener('click', handleNoteView);
+  };
 }
 
 getAndRenderNotes();
