@@ -12,6 +12,7 @@ notes.get('/', (req, res) => {
 
 notes.post('/', (req, res) => {
     console.log(req.body);
+    console.log("INSIDE OF notes.js POST")
 
     // Destructuring assignment for the items in req.body
     const { title, text } = req.body;
@@ -30,5 +31,12 @@ notes.post('/', (req, res) => {
       res.error('Error in adding note');
     }
   });
+
+notes.delete('/:id', (req, res) => {
+  
+  console.log("inside notes.DELETE");
+  console.log(req.params.id + "HERE");
+
+})
 
 module.exports = notes;

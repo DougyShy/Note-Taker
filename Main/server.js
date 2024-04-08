@@ -19,7 +19,6 @@ app.use(express.static('public'));
 
 app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, './public/notes.html')));
 
-// res.json() allows us to return JSON instead of a buffer, string, or static file
 app.get('*', (req, res) => res.sendFile(path.join(__dirname, './public/index.html')));
 
 app.listen(PORT, () =>
