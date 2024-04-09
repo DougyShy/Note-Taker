@@ -5,14 +5,11 @@ const uuid = require('../helpers/uuid');
 // GET Route for retrieving all the feedback
 notes.get('/', (req, res) => {
 
-    console.info(`${req.method} request received for notes`);
-
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
+    
 });
 
 notes.post('/', (req, res) => {
-    console.log(req.body);
-    console.log("INSIDE OF notes.js POST")
 
     // Destructuring assignment for the items in req.body
     const { title, text } = req.body;

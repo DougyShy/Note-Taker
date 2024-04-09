@@ -23,5 +23,15 @@
         "title": "5th",
         "text": "5th",
         "id": "d3e4"
+    },
+    {
+        "title": "6th",
+        "text": "7th",
+        "id": "bf5f"
+    },
+    {
+        "title": "This is my new note title",
+        "text": "New note text goes here",
+        "id": "25fa"
     }
 ]
