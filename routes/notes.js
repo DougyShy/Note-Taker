@@ -30,7 +30,8 @@ notes.post('/', (req, res) => {
   });
 
 notes.delete('/:id', (req, res) => {
-  
+
+  // Well I got this close to the bonus but time ran out  
   console.log("inside notes.DELETE");
   console.log(req.params.id + "HERE");
 

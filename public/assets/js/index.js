@@ -87,23 +87,27 @@ const handleNoteSave = () => {
 
 // Delete the clicked note
 const handleNoteDelete = (e) => {
-  // Prevents the click listener for the list from being called when the button inside of it is clicked
+  //Prevents the click listener for the list from being called when the button inside of it is clicked
   e.stopPropagation();
 
+  alert("Bonus DELETE not yet implemented...");
+
+  /* ---------------- This is where I started the BONUS.... might pursue later if I have time 
   const note = e.target;
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
-  console.log("NOTE ID:" + noteId);
+  //console.log("NOTE ID:" + noteId);
 
   if (activeNote.id === noteId) {
     activeNote = {};
   }
 
-  console.log(noteId + " right before DELETE NOTE");
-  console.log("Note ID: " + noteId);
+  //console.log(noteId + " right before DELETE NOTE");
+  //console.log("Note ID: " + noteId);
+
   deleteNote(noteId).then(() => {
     getAndRenderNotes();
     renderActiveNote();
-  });
+  }); -------------- */
 };
 
 // Sets the activeNote and displays it
