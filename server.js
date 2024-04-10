@@ -3,13 +3,10 @@ const express = require('express');
 const path = require('path');
 const api = require('./routes/index.js');
 
-// Require the JSON file and assign it to a variable called `termData`
-
 const PORT = process.env.PORT || 3001;
 
 // Initialize our app variable by setting it to the value of express()
 const app = express();
-
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true} ));
