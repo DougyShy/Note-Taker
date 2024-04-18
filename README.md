@@ -13,6 +13,7 @@ This project creates an app that allows the user to keep track of personal notes
   - [Tests](#tests)
   - [Contributing](#contributions)
   - [Questions](#questions)
+  - [Screenshots](#screenshots)
 
 ## Installation
 
@@ -30,9 +31,15 @@ Currently the user can apply these actions to the note
  - Clear the note section to create a new note 
  - Create new note
 
- - (FUTURE DEV) - DELETE note method is not currently running
+ - (FUTURE DEV) - DELETE note method is not currently running 
 
 Here is a link to the web applicatoin: https://dougs-note-taker-536625da70b2.herokuapp.com/
+
+## Screenshots
+
+  ![Landing Page](public\assets\images\landingPage.png)
+  ![Notes Page](public\assets\images\notesPage.png)
+  
 
 ## License
 
